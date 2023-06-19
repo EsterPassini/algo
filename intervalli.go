@@ -68,9 +68,8 @@ func scheduling() {
 	}
 	fmt.Println(v)
 
-	//v[c] = maxx(v[c-1], i.v + v[p[c]])
 
-	for i := len(v) - 1; i >= 0; {
+	/*for i := len(v) - 1; i >= 0; {
 		if v[i] == v[i-1] {
 			i--
 			continue
@@ -84,26 +83,9 @@ func scheduling() {
 			}
 		}
 		i--
-	}
+	}*/
 
 }
-
-/*func trovaPp(fine []int, m map[int]Interv) (p []int) {
-	p = make([]int, len(fine)+1)
-	p[0] = 0
-
-	for i := len(fine) - 1; i >= 0; i-- { //le fini
-		fmt.Println(i)
-		inter := m[fine[i]]
-		for t := i - 1; t >= 0; t-- {
-			if inter.in >= m[fine[t]].fi {
-				p[i+1] = t + 1
-				break
-			}
-		}
-	}
-	return p
-}*/
 
 func trovaP(inte []Interv) (p []int) {
 	p = make([]int, len(inte))

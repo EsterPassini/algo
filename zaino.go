@@ -37,17 +37,17 @@ func valMaxNoInfinitiOgg(ogg []oggetto, P int) [][]int {
 		c = make([]int, P+1)
 		m[i] = c
 	}
-	
+
 	//RIEMPIAMO PER COLONNE
 	for c := 1; c < len(ogg)+1; c++ {
 		for r := 1; r < len(m[c]); r++ {
 			if ogg[c-1].p <= r { //POTREI PRENDERE OGG
-				m[c][r] = max(m[c-1][r-ogg[c-1].p]+ ogg[c-1].v, m[c-1][r])
+				m[c][r] = max(m[c-1][r-ogg[c-1].p]+ogg[c-1].v, m[c-1][r])
 			} else {
 				m[c][r] = m[c-1][r] //NON PRENDO OGG, TROPPO PESANTE
 			}
 		}
-		
+
 	}
 	return m
 }
@@ -62,7 +62,7 @@ func valMax(ogg []oggetto, P int) int {
 			}
 			a[i+o.p] = max(a[i+o.p], a[i]+o.v)
 		}
-		//fmt.Println(a)
+
 	}
 	return a[P]
 }
