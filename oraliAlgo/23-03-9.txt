@@ -1,0 +1,23 @@
+3° orale
+- descrivere le varie rappresentazioni di grafi
+- la lista di archi dove l'abbiamo trovata? (kruskal)
+- un difetto della lista di adiacenza? (è facile trovare gli archi uscenti ma difficile trovare gli archi entranti)
+- algoritmo quicksort
+- per garantire spazio logaritmico cosa bisogna fare? (fare la chiamata ricorsiva sempre su quella più piccola)
+- cosa si intende per problema difficile?
+
+4° orale
+- criterio di costo uniforme? criterio di costo logaritmico? perché si chiama logaritmico? (con stringhe o con valori troppo grandi per essere rappresentati in un unico blocco (tipo 32bit)
+- albero ricoprente? albero ricoprente minimo?
+- algoritmi per trovare una alb. ricopr. minimo in un grafo?
+- kruskal? cosa rappresenta la partizione a metà dell'esecuzione?
+- cosa succede con i pesi negativi? (non cambia niente perchè gli archi vengono ordinati prima)
+- bellman ford (gli archi non vengono scelti in modo greedy, ma vengono ispezionati n-1 volte. 
+
+5° orale
+- code con priorità 
+- heap ? perché prendiamo l'ultima foglia? (per garantire sempre un albero quasi completo, senza buchi)
+- cosa succede se devo modificare una chiave all'interno dell'heap? 
+
+
+

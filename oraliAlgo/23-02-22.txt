@@ -1,0 +1,28 @@
+primo orale (teoria -> discreto, lab -> buono)
+- cos'è un albero perfettamente bilanciato? (per ogni nodo, in valore assoluto)
+- parla dell'heapSort. 
+	albero binario quasi completo (cioè completo fino al penultimo)
+	heap può essere rappresentato come vettore posizionale (si può usare per risolvere l'heapsort direttamente in loco, su vettore)
+	altezza logaritmica (n passi che faccio per risistemare l'heap)
+- tutti i passi per trasformare da array posizionale ad heap
+- quanto costa in termini di confronti la creazione di uno heap (spiegare perché nlogn). e in termini di spazio? studente spiega top-down e bottom-up (collegato allo spazio)
+- altro tipo di heap -> spiega code con priorità (stare attenti a dire CON e non DI). cosa sono queste strutture, che operazioni posso fare? cosa mi permettono di fare?
+- spiegare invece cosa si intende solo con coda (spiega coda fifo).
+- spiegare bubbleSort. La prima scansione che assicurazione da? (che l'ultimo elemento è quello più grande). In quale caso l'algoritmo può terminare prima di n scansioni?
+voto finale 27
+
+secondo orale (teoria -> sufficiente, lab -> sufficiente)
+- studente parte da prim (l'ha sbagliato allo scritto)
+- parla di un albero AVL. perché ci interessa questa struttura? (nel numero di accessi) (perché garantisce l'efficienza di logn)
+- parla di un albero 2-3. a cosa serve tutte le foglie alla stessa altezza
+- passaggi del quicksort (attenzione a descriverlo come se fosse in loco).
+- la complessità dell'algoritmo?
+	caso migliore (caso in cui le due partizioni sono perfettamente bilanciate). scrivere equazione di ricorrenza
+	caso medio 
+	caso peggiore (caso in cui prendo il primo elemento come pivot, e l'array è già ordinato)
+- occupazione di memoria dell'algoritmo? quante chiamate ricorsive ci possono essere nel caso peggiore?
+- cosa si intende per albero ricoprente di un grafo? definizione di un albero?
+- cosa si intende come algoritmo greedy? forniscono la soluzione ottimale? perché si utilizza comunque?
+voto finale 23
+
+

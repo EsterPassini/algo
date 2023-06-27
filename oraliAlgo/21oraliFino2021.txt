@@ -1,0 +1,313 @@
+P.S. 
+
+Molte domande sono inerenti agli argomenti dello scritto di teoria. 
+
+Non chiedete domande aggiuntive, il mercato è da un'altra parte. 
+
+PARLATE IN ITALIANO O SI ARRABBIA. Non ditegli "mergiamo". 
+
+pronunciate Daikstra o si arrabbia, anche se è errato. 
+
+Dite code CON priorità non code DI priorità 
+
+ 
+
+ 
+
+- perché quando valutiamo la complessità di un algoritmo andiamo a calcolare il numero di confronti? Che tipo di relazione c’è tra il numero di confronti ed il tempo? 
+
+- che criterio utilizziamo per dire che il costo di un confronto è O(1)? Con quante cifre rappresentiamo un intero? 
+
+- differenza tra confronti e tempo (negli ordinamenti i confronti sono le operazioni più dispendiose) 
+
+- quando la stima dei confronti equivale alla stima del tempo (quando sono O(1) 
+
+- quando la stima dei confronti vale di più della stima del tempo (stringhe). Quanto costa? (O(m) m lunghezza della stringa) 
+
+ 
+
+ 
+
+INSERTIONSORT 			* 
+
+- parlane 
+
+ 
+
+SELECTIONSORT 			* 
+
+- algoritmo che fa sempre n^2 confronti 
+
+ 
+
+BUBBLESORT 				* * * * * 
+
+- come funziona e prestazioni 
+
+- numero confronti (caso migliore e peggiore) 
+
+- la prima scansione che assicurazione da? (che l’ultimo elemento è quello più grande) 
+
+- in quale caso l’algoritmo può terminare prima di n scansioni? 
+
+ 
+
+MERGESORT 				* * * 
+
+- possiamo sempre dividere l’array? Qual è il caso base? 
+
+- quanti confronti fa il merge? Equazione di ricorrenza del merge 
+
+- analizza spazio. 
+
+- c’è un algoritmo migliore ed uno peggiore del mergesort? Spiega perché. 
+
+- cos’è log*n? (domanda fatta perché erroneamente tirato in causa nella complessità). 
+
+ 
+
+QUICKSORT				* * * * * * * * * 
+
+- algoritmo. Caso base 
+
+- obiettivo del partizionamento? Quanti confronti fanno? È importante sapere quanti confronti vengono fatti da partiziona? (studente decide di scrivere l’equazione di ricorrenza) 
+
+- equazione di ricorrenza?  
+
+- prestazioni (caso migliore, in cui le due partizioni sono perfettamente bilanciate. Caso medio, caso peggiore in cui prendo il primo elemento come pivot, e l’array è già ordinato) 
+
+- Quanto costa in termini di memoria (caso peggiore, quante chiamate ricorsive ci possono essere)? Costi caso migliore e medio. Il caso migliore è la stessa situazione che si ha in quale algoritmo? 
+
+- Perché si chiama QuickSort se il caso peggiore è O(n²)? (perché il caso peggiore è molto raro) il caso medio cosa garantisce? 
+
+- dato che il caso medio è se divido in due parti uguali le parti, allora perché non trovo il valore mediano e uso quello come perno? Quanto costa trovare il valore mediano? Se volessi usare un algoritmo più efficiente cosa potrei usare? (studente sceglie heapsort) 
+
+- parla dell’altezza dello stack. Si può migliorare? (sì con l’algoritmo “opportunista”, detto dal prof) 
+
+- tecnica divide-et-impera 
+
+ 
+
+???- quale è il risultato della sommatoria dei numeri da 1 ad n? 
+
+ 
+
+HEAPSORT/HEAP 				* * * * * * * * 
+
+- spiega heapsort. 
+
+- spiega creaHeap con strategia bottom-up e strategia top-down. Quale delle due è peggiore/migliore e perché? Come faccio nel creaheap bottom-up a reperire le foglie? 
+
+- che differenza c’è tra tempo e confronti? 
+
+- si può fare meglio dell’heapsort? Perché il numero di confronti minimo per ordinare è nlogn? 
+
+- spiega cos’è un heap (struttura e contenuto). (albero binario quasi completo, cioè completo fino alla penultima riga. Heap può essere rappresentato come vettore posizionale) 
+
+- Quanto costano le operazioni sull’heap? Quanto costa in termini di confronti la creazione di uno heap? (perché nlogn?) 
+
+- quanto cosa in termini di spazio  quanto costa l’heap? (studente spiega top-down e bottom-up) 
+
+- perché heap quasi completo? 
+
+- cosa garantisce questa struttura? (altezza logaritmica) 
+
+- heap come array? Tutti i passi per trasformare da array posizionale ad heap 
+
+- perché scambiamo ultima foglia a dx e radice? 
+
+- possiamo utilizzare il vettore posizionale su alberi generici? 
+
+- come mai un albero che degenera in una lista risulta più inefficiente rispetto ad un albero con bilanciamento (costi lineari VS costi logaritmici) 
+
+- in che momento dell’heapSort serve muoversi dalla radice verso la foglia (durante risistema) 
+
+- come mai si applica risistema al posto di prendere il massimo dei figli e portarli nella radice ad ogni iterazione (si perde la condizione di bilanciamento) 
+
+- dare un algoritmo che ha le stesse prestazioni in termini di confronti ma che usa più memoria (mergeSort perché usa un array ausiliario) 
+
+ 
+
+CODE CON PRIORITÀ 			* * * 
+
+- perché le code con priorità in Dijkstra sono efficienti? 
+
+- Dove usiamo gli heap oltre alle code con priorità? (heapsort) 
+
+- che operazioni posso fare? Cosa mi permettono di fare? 
+
+- differenza coda normale e coda con priorità 
+
+ 
+
+ALBERO 				* * * 
+
+- definizione in termini di grafi 
+
+- problemi relativi agli alberi (albero ricoprente minimo) 
+
+- definizione di albero ricoprente minimo 
+
+- cosa vuol dire che il grafo è connesso (tra ogni coppia di vertici esiste un cammino) 
+
+- cos’è una foresta 
+
+- differenza tra alberi in termini di grafi e di alberi con radice ?? 
+
+- in cosa può degenerare un albero (lista, costi lineari) 
+
+ 
+
+ALBERO DI RICERCA 			* * * 
+
+- spiegazione in generale. 
+
+- che visita va fatta per avere i nodi in ordine 
+
+- esistono alberi di ricerca non binari? 
+
+- utilità b-alberi e alberi 2-3 
+
+ 
+
+ALBERI PERFETTAMENTE BILANCIATI	* * * * * 
+
+- definizione. ( l’aveva sbagliato nello scritto) (…. Per ogni nodo…. Differenza in valore assoluto…) 
+
+- Costo operazioni. 
+
+- Dove sono i problemi? Gli alberi perfettamente bilanciati sono alberi di ricerca? 
+
+- fare un esempio di quando l’aggiunta di un nodo in un albero perfettamente bilanciato costa troppo 
+
+- cosa può succedere se inserisco? Quando si sbilancia un albero? Disegna un albero sbilanciato in modo bilanciato. 
+
+- Quanto costa bilanciare? 
+
+ 
+
+ALBERO AVL 				* * * * 
+
+- Perché vengono introdotti? Cosa garantisce la condizione dell’AVL? (numero di accessi) Perché l’inserimento è logaritmico? 
+
+- quanto costa il bilanciamento? 
+
+ 
+
+ALBERO 2-3 				* * * * 
+
+- Altezza rispetto alle chiavi 
+
+- come funziona l’operazione di ricerca di un elemento? 
+
+- a cosa servono tutte le foglie alla stessa altezza? 
+
+ 
+
+B-ALBERI 				*  
+
+- che struttura possiamo usare per mantener le chiavi di un nodo interno? (un vettore ordinato) 
+
+- che ricerca possiamo fare sulle chiavi? (ricerca dicotomica) 
+
+- perché usiamo i b-alberi? 
+
+- come si effettua la ricerca? 
+
+- come si effettua l’inserimento? (split) 
+
+ 
+
+ALBERO RICOPRENTE 			* * * 
+
+- spiegare 
+
+ 
+
+TECNICA GREEDY 			* * * * * * 
+
+- algoritmo greedy. Esempio di algoritmo greedy che risolve un problema in modo non ottimale. Esempio problema in modo ottimale. 
+
+- problema dello zaino 
+
+- trova sempre la soluzione ottimale? Perché si utilizza comunque? 
+
+- ci sono algoritmo che trovano sempre la soluzione ottimale? (kruskal/prim/dijkstra) 
+
+ 
+
+KRUSKAL 				* * * * * * 
+
+- quale è la soluzione parziale di kruskal? Cosa rappresenta la soluzione parziale? (foresta di alberi) Se le metto insieme cosa ottengo? Se unisco due insiemi della partizione cosa ottengo? 
+
+- dimostrazione che kruskal trova una soluzione ottima. 
+
+- strutture extra per l’algoritmo 
+
+- come cambia la complessità se si usa bubbleSort per ordinare gli archi 
+
+- spiega tutte le rappresentazioni possibili di un grafo, per ognuna dire la complessità e poi dire quale è la migliore e quale è la peggiore.  
+
+ 
+
+PRIM					*  
+
+- alto livello, complessità e che rappresentazione del grafo in ingresso conviene 
+
+ 
+
+UNIONFIND 				* * 
+
+- Operazioni della struttura dati. 
+
+- La union quante parti permette di unire? Il nome della nuova partizione qual è? 
+
+- Implementazione di QuickUnion. Cosa me ne faccio dei puntatori dai figli verso il padre? 
+
+- Spiega union by rank. Quando cresce l’altezza? Qual è il contrario di minore? Cosa possiamo dire dell’altezza rispetto al n° di nodi? 
+
+- struttura quickfind (rappresentazione e union normale/bilanciata) 
+
+- quickfind con compressione di cammino 
+
+ 
+
+FLOYD-WARSHALL 			* 
+
+- spiegazione algoritmo. 
+
+- che tecnica utilizza? (programmazione dinamica) che cos’è la programmazione dinamica? Come sono “formati” i sotto-problemi? (problemi vincolati) 
+
+ 
+
+CAMMINI MINIMI 			* * 
+
+- spiega il problema dei cammini minimi 
+
+ 
+
+DIJKSTRA 				* * 
+
+- spiegazione 
+
+- che tipo di rappresentazione di un grafo conviene usare? (lista di adiacenza) 
+
+- spiegare cos’è la lista di adiacenza. Dare un esempio di una rappresentazione svantaggiosa e perché lo è 
+
+- che strategia utilizza l’algoritmo? 
+
+ 
+
+PROBLEMI NP				* 
+
+- Classe NP 
+
+- cosa significa algoritmo non deterministico 
+
+- cos’è un problema NP – completo 
+
+- se trovo un algoritmo che risolve in tempo polinomiale un problema NP-completo, cosa ottengo? 
+
+ 
+
+ 
